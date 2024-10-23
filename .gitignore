@@ -1,8 +1,49 @@
+# Ігноруємо системні файли Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Ігноруємо файли Visual Studio
 .vs/
 *.vscode/
-bin/
-obj/
 *.user
 *.suo
 *.tmp
 *.log
+*.ncrunch*
+*.coverage
+*.vsmdi
+*.testsettings
+
+# Ігноруємо папки з NuGet пакетами та кешовані дані
+packages/
+*.nupkg
+*.snupkg
+.nuget/
+project.lock.json
+project.fragment.lock.json
+
+# Ігноруємо папки, що генеруються під час компіляції
+bin/
+obj/
+
+# Ігноруємо конфігурації файлів збірки
+*.Build.*
+*.Build.CI.*
+*.Build.Local.*
+
+# Ігноруємо залежності та тимчасові файли
+node_modules/
+bower_components/
+lib/
+logs/
+
+# Ігноруємо файли закінчення рядків CRLF
+*.sh eol=lf
+*.txt eol=lf
+*.md eol=lf
+
+# Спеціальні файли налаштувань для проекту на Windows
+*.resx
+*.config
+*.settings
